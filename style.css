@@ -35,7 +35,7 @@ input {
     box-sizing: border-box;
 }
 
-button {
+.index-btn {
     background-color: #fdfaf1;
     border: none;
     color: black;
@@ -50,7 +50,7 @@ button {
     transition-duration: 0.4s;  
 }
 
-button:hover {
+.index-btn:hover {
     background-color: #363945;
     color: white;
 }
