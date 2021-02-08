@@ -2,6 +2,7 @@ const myText = document.getElementById("my-text"),
       add = document.getElementById("add"),
       cancel = document.getElementById("cancel"),
       myList = document.getElementById("list");
+      
 
 let createVal = () => {
     let crList = document.createElement("li");    
@@ -16,9 +17,13 @@ let createVal = () => {
     delBtn.appendChild(delBtnCont);
     crList.appendChild(delBtn);
     myList.appendChild(crList);
-    myText.value = "";    
+    myText.value = "";
 }
 
 add.addEventListener("click", createVal);
 cancel.addEventListener("click", () => myText.value = "");
-
+myList.addEventListener("click", e => {
+    if (e.target.id === "toDoRemove") {
+        e.target.parentElement.remove()
+    }    
+})
