@@ -1,4 +1,4 @@
-//Create elements variables
+//Create element variables
 const myText = document.getElementById("my-text"),
       add = document.getElementById("add"),
       cancel = document.getElementById("cancel"),
@@ -24,7 +24,7 @@ let createVal = () => {
 add.addEventListener("click", createVal);
 cancel.addEventListener("click", () => myText.value = "");
 
-//JS event propagation. Erase activity when click in remove button
+//JS event propagation. Erase activity when click on remove button
 myList.addEventListener("click", e => {
     if (e.target.id === "toDoRemove") {
         e.target.parentElement.remove()
