@@ -55,3 +55,42 @@ input {
     color: white;
 }
 
+ol {    
+    width: 48%;
+    height: auto;    
+}
+
+li::marker {    
+    color: #fdfaf1;
+}
+
+.toDo {      
+    font-size: 2em;
+    font-weight: bold;
+    border: 2px solid #fdfaf1;
+    border-radius: 10px;
+    margin-bottom: 0.5em;
+    color: #00A170;
+    background-color: #fdfaf1;    
+}
+
+.toDoRemove {
+    float: right;    
+    background-color: #00A170;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;    
+    display: block;
+    font-size: 0.5em;
+    font-weight: bold;
+    margin: 0px 2px 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition-duration: 0.4s;  
+}
+
+.toDoRemove:hover {
+    background-color: #363945;
+    color: white;
+}
